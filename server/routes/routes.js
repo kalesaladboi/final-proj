@@ -19,4 +19,5 @@ router.post('/register', (req,res) => {
     })
 })
 
+router
 module.exports = router
