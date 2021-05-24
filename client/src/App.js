@@ -4,7 +4,7 @@ import axios from 'axios'
 import Dashboard from "./components/Dashboard"
 import Home from "./components/Home"
 import MovieNight from "./components/MovieNight"
-
+import Header from "./components/Header"
 export default class App extends Component {
   constructor() {
     super()
@@ -16,6 +16,8 @@ export default class App extends Component {
 
     this.handleLogin= this.handleLogin.bind(this)
   }
+
+  
 
   checkLoginStatus() {
     axios.get("http://localhost:3001/logged_in", { withCredentials: true})
@@ -40,13 +42,14 @@ export default class App extends Component {
   render(){
     return (
       <div className='app'>
-        <BrowserRouter>
-          <Switch>
-            <Route 
-            exact 
-            path={"/"} 
-            render={props => (
-              <Home {... props} handleLogin={this.handleLogin} loggedInStatus={this.state.loggedInStatus} />
+        <Header />
+          <BrowserRouter>
+            <Switch>
+              <Route 
+              exact 
+              path={"/"} 
+              render={props => (
+                <Home {... props} handleLogin={this.handleLogin} loggedInStatus={this.state.loggedInStatus} />
             )}
             />
             <Route 
@@ -70,3 +73,4 @@ export default class App extends Component {
     )
   }
 }
+
