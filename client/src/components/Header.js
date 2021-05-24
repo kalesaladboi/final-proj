@@ -8,7 +8,7 @@ export default class Header extends Component {
         <div className="nav-wrapper">
           <div className="brand-logo">
             <a href="#">
-              mappmechanic
+              Anti Social Social Network
             </a>
           </div>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
