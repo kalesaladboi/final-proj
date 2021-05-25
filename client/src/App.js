@@ -5,6 +5,8 @@ import Dashboard from "./components/Dashboard"
 import Home from "./components/Home"
 import MovieNight from "./components/MovieNight"
 import Header from "./components/Header"
+import './App.css'
+
 export default class App extends Component {
   constructor() {
     super()
