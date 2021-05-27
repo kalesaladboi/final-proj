@@ -1,72 +1,29 @@
-import React, { Component } from "react"
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import axios from 'axios'
-import Dashboard from "./components/Dashboard"
-import Home from "./components/Home"
-import MovieNight from "./components/MovieNight"
+import React from 'react';
+import { Container } from '@material-ui/core';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-export default class App extends Component {
-  constructor() {
-    super()
+import PostDetails from './components/PostDetails/PostDetails';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Auth from './components/Auth/Auth';
 
-    this.state = {
-      loggedInStatus: "NOT_LOGGED_IN",
-      user: {}
-    }
+const App = () => {
+  const user = JSON.parse(localStorage.getItem('profile'));
 
-    this.handleLogin= this.handleLogin.bind(this)
-  }
+  return (
+    <BrowserRouter>
+      <Container maxWidth="xl">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={() => <Redirect to="/posts" />} />
+          <Route path="/posts" exact component={Home} />
+          <Route path="/posts/search" exact component={Home} />
+          <Route path="/posts/:id" exact component={PostDetails} />
+          <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/posts" />)} />
+        </Switch>
+      </Container>
+    </BrowserRouter>
+  );
+};
 
-  checkLoginStatus() {
-    axios.get("http://localhost:3001/logged_in", { withCredentials: true})
-    .then(response => {
-      console.log("logged in?", response)
-    }).catch(error =>{
-      console.log("login error:", error)
-    })
-  }
-
-  componentDidMount() {
-    this.checkLoginStatus()
-  }
-
-  handleLogin(data) {
-    this.setState({
-      loggedInStatus: "LOGGED_IN",
-      user: data.user
-    })
-  }
-
-  render(){
-    return (
-      <div className='app'>
-        <BrowserRouter>
-          <Switch>
-            <Route 
-            exact 
-            path={"/"} 
-            render={props => (
-              <Home {... props} handleLogin={this.handleLogin} loggedInStatus={this.state.loggedInStatus} />
-            )}
-            />
-            <Route 
-            exact 
-            path={"/dashboard"} 
-            render={props => (
-              <Dashboard {... props} loggedInStatus={this.state.loggedInStatus} />
-            )}
-            />
-            <Route 
-            exact 
-            path={"/movie"} 
-            render={props => (
-              <MovieNight {... props} loggedInStatus={this.state.loggedInStatus} />
-            )}
-            />
-            <Route />
-          </Switch>
-        </BrowserRouter>
-      </div>
-    )
-  }
-}
+export default App;
