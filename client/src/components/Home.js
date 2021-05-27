@@ -1,6 +1,16 @@
 import React, {Component} from 'react'
 import Login from './auth/Login'
 import Registration from './auth/Registration'
+//import React from 'react'
+//import Header from './Header'
+
+//cosnt Home = () => {
+ //   return(
+   //     <div>
+    //        <Header/>
+    //    </div>
+    //)
+//}
 
 export default class Home extends Component {
 
@@ -11,11 +21,11 @@ export default class Home extends Component {
     }
 
     handleSuccessfulAuth(data) {
-        this.props.handleLogin(data)
-        this.props.history.push("/dashboard")
+       this.props.handleLogin(data)
+       this.props.history.push("/dashboard")
     }
 
-    render(){
+   render(){
         return(
             <div>
                 <h1>Home</h1>
@@ -26,3 +36,4 @@ export default class Home extends Component {
         )
     }
 }
+
