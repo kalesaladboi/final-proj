@@ -1,7 +1,7 @@
 const { response } = require('express')
 const express = require('express')
 const router = express.Router()
-const register = require('../modles/register')
+const register = require('../models/register')
 
 router.post('/register', (req,res) => {
     const registerUser = new register({
