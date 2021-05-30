@@ -4,18 +4,16 @@ export default makeStyles({
   media: {
     height: 0,
     paddingTop: '56.25%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    backgroundBlendMode: 'darken',
   },
   border: {
-    border: 'solid',
+    border: 'dotted',
   },
   fullHeightCard: {
     height: '100%',
   },
   card: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     justifyContent: 'space-between',
     borderRadius: '15px',
     height: '100%',
@@ -25,13 +23,13 @@ export default makeStyles({
     position: 'absolute',
     top: '20px',
     left: '20px',
-    color: 'white',
+    color: 'black',
   },
   overlay2: {
     position: 'absolute',
     top: '20px',
     right: '20px',
-    color: 'white',
+    color: 'purple',
   },
   grid: {
     display: 'flex',
@@ -40,9 +38,11 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
     margin: '20px',
+    color: '#420420',
   },
   title: {
     padding: '0 16px',
+    color: '#420420',
   },
   cardActions: {
     padding: '0 16px 8px 16px',
@@ -50,7 +50,7 @@ export default makeStyles({
     justifyContent: 'space-between',
   },
   cardAction: {
-    display: 'block',
+    display: 'table-row',
     textAlign: 'initial',
   },
 });
