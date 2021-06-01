@@ -1,6 +1,7 @@
-import React from 'react'
-
+import React from 'react';
+import useStyles from "./style";
 const Movie = () => {
+    const classes = useStyles();
     return (
         <div>
             MOVIE
