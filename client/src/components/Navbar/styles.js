@@ -23,9 +23,11 @@ export default makeStyles((theme) => ({
     fontWeight: 300,
   },
   image: {
-    marginLeft: '10px',
+    marginLeft: '-20px',
     marginRight: '650px',
-    marginTop: '5px',
+    marginTop: '0px',
+    borderRadius: '40%',
+    height: '4rem',
   },
   toolbar: {
     backgroundcolor: '#420420',
