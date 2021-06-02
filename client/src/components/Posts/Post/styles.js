@@ -12,7 +12,7 @@ export default makeStyles({
     height: '100%',
   },
   card: {
-    background: '#420420',
+    background: 'rgba(255, 255, 0, 0.6)',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',

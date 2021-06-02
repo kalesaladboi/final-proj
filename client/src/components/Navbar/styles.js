@@ -4,7 +4,7 @@ import { deepPurple } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   appBar: {
     width: '100%',
-    background: '#420420 !important',
+    background: '#e73291 !important',
     margin: '30px 0',
     border: '0px',
     display: 'flex',
@@ -41,7 +41,7 @@ export default makeStyles((theme) => ({
 
   },
   toolbar: {
-    backgroundcolor: '#420420',
+    backgroundcolor: '#696969',
     display: 'flex',
     justifyContent: 'flex-end',
     width: '100px',

@@ -13,7 +13,7 @@ export default makeStyles((theme) => ({
     width: '100%',
     [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
-      flexDirection: 'column',
+      flexDirection: 'row',
     },
   },
   section: {
@@ -30,7 +30,7 @@ export default makeStyles((theme) => ({
   recommendedPosts: {
     display: 'flex',
     [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column',
+      flexDirection: 'row',
     },
   },
   loadingPaper: {
