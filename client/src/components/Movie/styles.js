@@ -1,14 +1,14 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-  appBarSearch: {
-    borderRadius: 4,
-    margin: '0',
-    marginBottom: '1rem',
-    display: 'flex',
-    background: '#420420',
-    fontcolor: 'grey',
-  },
+//   appBarSearch: {
+//     borderRadius: 4,
+//     margin: '0',
+//     marginBottom: '1rem',
+//     display: 'flex',
+//     background: '#e73291',
+//     fontcolor: 'grey',
+//   },
   pagination: {
     borderRadius: 4,
     position: 'center',
