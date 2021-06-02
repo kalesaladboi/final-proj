@@ -1,8 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { Player } from 'video-react';
-import wasabi from ".././assets/wasabi.mp4"
 import vossiBop from ".././assets/vossibop.mp4"
-import sayless from ".././assets/sayless.mp4"
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import axios from 'axios'
@@ -13,8 +11,8 @@ class MovieNight extends React.Component {
         super(props)
 
         this.state = {
-            video: vossiBop,
-            option: ''
+            video: ``,
+            option: [`acf6827da53f2a2b9dbd8309dfaf81c6.mp4`,`f6ec9d5383ed867d8fc4d79bc6b34195.mp4`,`417994545aaf1921c22e0f2b82728a0c.mp4`]
         }
 
         this.handleChange.bind(this);
@@ -23,9 +21,15 @@ class MovieNight extends React.Component {
 
     componentDidMount() {
         axios
-        .get(`https://media-api-final-proj.herokuapp.com/mediaget`)
+        .get(`http://localhost:4000/files`)
         .then(res =>{ 
-            this.setState({option: res.files})
+            //console.log(res.data)
+            this.setState({
+                video: `http://localhost:4000/files/${res.data[0].filename}`
+        })
+            this.myVideoRef.current.video.load()
+            this.forceUpdate()
+            console.log(this.state.option)
         })
         .catch(error =>{
             console.log(error)
@@ -34,10 +38,11 @@ class MovieNight extends React.Component {
 
     handleChange = (e) => {
         console.log(e.value)
-        this.setState({video: e.value})
+        this.setState({video: `http://localhost:4000/files/${e.value}`})
         this.myVideoRef.current.video.load()
         this.forceUpdate()
     }
+
     render() {
         return (
             <div className="video-player">

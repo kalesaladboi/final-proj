@@ -5,8 +5,6 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
 import sociallogo from '../../images/sociallogo.png';
-import socialtext from '../../images/socialtext.png';
-import movienight from '../../images/movienight.png';
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -53,7 +51,7 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-          <Button component={Link} to="/Movie" variant="contained" color="primary">Movie Night</Button>
+          <Button component={Link} to="/movie" variant="contained" color="primary">Movie Night</Button>
           <Button component={Link} to="/auth" variant="contained" color="secondary">Sign In</Button>
           </>
         )}

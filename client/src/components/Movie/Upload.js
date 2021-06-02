@@ -11,7 +11,6 @@ class Upload extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
     }
-
     handleChange(event) {
         this.setState({
                 selectedFile : event.target.files[0]
@@ -23,7 +22,7 @@ class Upload extends React.Component {
         const data = new FormData()
         data.append('file', this.state.selectedFile)
         console.log('boobies')
-        axios.post('https://media-api-final-proj.herokuapp.com//mediapost', data)
+        axios.post('http://localhost:4000/mediapost', data)
         .then(response => {
             console.log(response)
         }).catch(error => {
