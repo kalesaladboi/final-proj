@@ -42,7 +42,7 @@ const Navbar = () => {
       <Link to="/" className={classes.brandContainer}>
         <img className={classes.logo} src={sociallogo} alt="icon" height="45px" />
       </Link>
-      <Link to="/Movie" className={classes.brandContainer}>
+      <Link to="/Movies" className={classes.brandContainer}>
         <img className={classes.Mlogo} src={MNLogo} alt="icon" height="45px" />
       </Link>
       </div>

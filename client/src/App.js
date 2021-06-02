@@ -4,8 +4,8 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import PostDetails from './components/PostDetails/PostDetails';
 import Navbar from './components/Navbar/Navbar';
-import MovieHome from './components/Movie/Movies/movies';
-import MovieNight from './components/Movie/movie';
+import MovieHome from './components/Movies/movies';
+import MovieNight from './components/Movies/Movie/movie';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 

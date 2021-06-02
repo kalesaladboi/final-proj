@@ -3,9 +3,9 @@ import { Container, Grow, Grid, AppBar, TextField, Button, Paper } from '@materi
 import { useDispatch } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import Posts from '../../Posts/Posts'; //go
-import Pagination from '../../Pagination'; //stays
-import useStyles from '../styles';
+import Posts from '../Posts/Posts'; //go
+import Pagination from '../Pagination'; //stays
+import useStyles from './styles';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);

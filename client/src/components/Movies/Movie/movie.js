@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { Player } from 'video-react';
-import wasabi from ".././assets/wasabi.mp4"
-import vossiBop from ".././assets/vossibop.mp4"
-import sayless from ".././assets/sayless.mp4"
+import wasabi from "../../assets/wasabi.mp4"
+import vossiBop from "../../assets/vossibop.mp4"
+import sayless from "../../assets/sayless.mp4"
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import axios from 'axios'
-import Upload from './Upload';
+import Upload from '../Upload';
 
 class MovieNight extends React.Component {
     constructor(props) {
