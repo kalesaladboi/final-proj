@@ -23,7 +23,7 @@ class Upload extends React.Component {
         const data = new FormData()
         data.append('file', this.state.selectedFile)
         console.log('boobies')
-        axios.post('http://localhost:8000/mediapost', data)
+        axios.post('https://media-api-final-proj.herokuapp.com//mediapost', data)
         .then(response => {
             console.log(response)
         }).catch(error => {

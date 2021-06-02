@@ -11,14 +11,27 @@ import Upload from './Upload';
 class MovieNight extends React.Component {
     constructor(props) {
         super(props)
+
         this.state = {
             video: vossiBop,
-            option: [vossiBop,  sayless, wasabi]
+            option: ''
         }
 
         this.handleChange.bind(this);
         this.myVideoRef = React.createRef();
     }
+
+    componentDidMount() {
+        axios
+        .get(`https://media-api-final-proj.herokuapp.com/mediaget`)
+        .then(res =>{ 
+            this.setState({option: res.files})
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
+
     handleChange = (e) => {
         console.log(e.value)
         this.setState({video: e.value})

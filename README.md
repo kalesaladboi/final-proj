@@ -1,7 +1,7 @@
 # Social
 
   ## Description 
-
+This application was designed to be a basic social media application that allows the users to post blogs, and images. We initially felt this wasnt enough to intice a community together so we added a movie streaming function as well.
 
   ## Table of Contents
   
@@ -19,7 +19,7 @@
   * [Acceptence_Criteria](#Acceptence_Criteria)
 
   ## Installation
-  
+  because we have concurrently running installation is as easy as coping the repository and running "npm i" in the root folder.
 
   ## Usage 
 
@@ -30,7 +30,7 @@
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  MIT License
-Copyright (c) [2021] [ Nikki Goodridge, Paul Kupiszewski, Preston Geyer, Urika Pye, Kevin Miller]
+Copyright (c) [2021] [ Emma Gollan, Sam Ramos, Preston Geyer,  Kyle Miller]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -51,11 +51,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   
   
   ## Contributing
-  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]( https://github.com/FlipFlaptheTraitor)
+  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)]( https://github.com/Prestongeyer713)
  Edited by Sam Ramos, Kyle Miller, Preston Geyer , Emma Gollan using Git and VScode
 
   ## Tests
 
 
   ## Mvp
-    
+
+
+  ## User Story
+  As Some One who doesnt like modern social media I want to see a bare bones application that allows posting of pictures blogs and movies.
+ 
+  ## Acceptence Criteria 
+  On page load user is shown most recent posts and prompted to sign in. once signed in the user can click the pop up menu to generate there own post. when the user clicks a post it shows them the details of the post. when the user clicks the movie night button at the top, they are taken to the movie page where they can upload and share movies.
