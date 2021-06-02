@@ -22,7 +22,7 @@ This application was designed to be a basic social media application that allows
   because we have concurrently running installation is as easy as coping the repository and running "npm i" in the root folder.
 
   ## Usage 
-
+https://morning-dawn-77427.herokuapp.com/
 
   ## Credits
 
