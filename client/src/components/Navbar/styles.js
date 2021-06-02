@@ -36,6 +36,7 @@ export default makeStyles((theme) => ({
   Mlogo: {
     marginLeft: '20px',
     borderRadius: '40%',
+    height:'3rem'
 
 
   },
