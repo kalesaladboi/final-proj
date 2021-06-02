@@ -4,7 +4,7 @@ import { deepPurple } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   mainContainer: {
     borderRadius: 15,
-    background: '#696969',
+    background: '#420420',
     margin: '30px 0',
     display: 'flex',
     flexDirection: 'grid',
@@ -36,6 +36,7 @@ export default makeStyles((theme) => ({
   brandContainer: {
     display: 'flex',
     alignItems: 'center',
+    color: 'grey',
   },
   smMargin: {
     margin: theme.spacing(1),
@@ -66,5 +67,6 @@ export default makeStyles((theme) => ({
 
   actionDiv: {
     textAlign: 'center',
+    textcolor: 'grey',
   },
 }));

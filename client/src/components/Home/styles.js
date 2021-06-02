@@ -6,13 +6,18 @@ export default makeStyles((theme) => ({
     margin: '0',
     marginBottom: '1rem',
     display: 'flex',
-    background: '#696969',
+    background: '#420420',
+    fontcolor: 'grey',
   },
   pagination: {
     borderRadius: 4,
-    marginTop: '1rem',
-    padding: '16px',
+    position: 'center',
+    width: '100%',
+    marginTop: '5rem',
+    marginRight: '200px',
+    display: 'inline-block',
     background: '#e73291',
+    buttoncolor: '#420420',
   },
   gridContainer: {
     [theme.breakpoints.down('xs')]: {

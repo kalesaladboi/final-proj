@@ -4,7 +4,7 @@ import { deepPurple } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   appBar: {
     width: '100%',
-    background: '#696969 !important',
+    background: '#420420 !important',
     margin: '30px 0',
     border: '0px',
     display: 'flex',
@@ -22,12 +22,23 @@ export default makeStyles((theme) => ({
     fontSize: '7em',
     fontWeight: 300,
   },
-  image: {
+  logos: {
     marginLeft: '-20px',
-    marginRight: '650px',
-    marginTop: '0px',
+    display: 'flex',
+    flexDirection: 'row',
+    width: '40%'
+
+    
+  },
+  logo: {
     borderRadius: '40%',
-    height: '4rem',
+  },
+  Mlogo: {
+    marginLeft: '20px',
+    borderRadius: '40%',
+    height:'3rem'
+
+
   },
   toolbar: {
     backgroundcolor: '#420420',
@@ -58,7 +69,6 @@ export default makeStyles((theme) => ({
     textAlign: 'center',
   },
   brandContainer: {
-    display: 'flex',
     alignItems: 'center',
   },
   purple: {

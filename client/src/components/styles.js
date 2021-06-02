@@ -7,5 +7,10 @@ export default makeStyles(() => ({
    bottom:'0',
    width:'100%',
    height:'60px',
+    color: '#420420'
+
   },
+  hover: {
+    color:'#420420',
+  }
 }));
