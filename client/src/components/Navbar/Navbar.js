@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
 import sociallogo from '../../images/sociallogo.png';
+import MNLogo from '../../images/MNLogo.png';
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -41,8 +42,8 @@ const Navbar = () => {
       <Link to="/" className={classes.brandContainer}>
         <img className={classes.logo} src={sociallogo} alt="icon" height="45px" />
       </Link>
-      <Link to="/Movies" className={classes.brandContainer}>
-        <img className={classes.Mlogo} src={sociallogo} alt="icon" height="45px" />
+      <Link to="/Movie" className={classes.brandContainer}>
+        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="45px" />
       </Link>
       </div>
       <Toolbar className={classes.toolbar}>
