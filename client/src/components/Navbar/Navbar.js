@@ -5,8 +5,6 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
 import sociallogo from '../../images/sociallogo.png';
-import socialtext from '../../images/socialtext.png';
-import movienight from '../../images/movienight.png';
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -39,11 +37,14 @@ const Navbar = () => {
 
   return (
     <AppBar className={classes.appBar} position="static" color="default">
+      <div className = "logos" >
       <Link to="/" className={classes.brandContainer}>
-        {/* <img component={Link} to="/" src={socialtext} alt="icon" height="45px" /> */}
-        <img className={classes.image} src={sociallogo} alt="icon" height="45px" />
-        {/* <img component={Link} to="/" src={movienight} alt="icon" height="45px" /> */}
+        <img className={classes.logo} src={sociallogo} alt="icon" height="45px" />
       </Link>
+      <Link to="/Movies" className={classes.brandContainer}>
+        <img className={classes.Mlogo} src={sociallogo} alt="icon" height="45px" />
+      </Link>
+      </div>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>
@@ -53,7 +54,6 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-          <Button component={Link} to="/Movie" variant="contained" color="primary">Movie Night</Button>
           <Button component={Link} to="/auth" variant="contained" color="secondary">Sign In</Button>
           </>
         )}
