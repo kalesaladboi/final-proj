@@ -38,14 +38,15 @@ const Navbar = () => {
 
   return (
     <AppBar className={classes.appBar} position="static" color="default">
-      <div className = "logos" >
+      <div className = "logos">
       <Link to="/" className={classes.brandContainer}>
-        <img className={classes.logo} src={sociallogo} alt="icon" height="45px" />
+        <img className={classes.logo} src={sociallogo} alt="icon" height="100px" />
       </Link>
       <Link to="/Movie" className={classes.brandContainer}>
-        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="45px" />
+        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="100px" />
       </Link>
       </div>
+      <Typography color="textPrimary" variant="h1">SOCIAL</Typography>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>
@@ -55,7 +56,7 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-          <Button component={Link} to="/auth" variant="contained" color="secondary">Sign In</Button>
+          <Button component={Link} to="/auth" variant="contained" color="">Sign In</Button>
           </>
         )}
       </Toolbar>
