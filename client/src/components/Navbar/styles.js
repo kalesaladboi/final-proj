@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { deepPurple } from '@material-ui/core/colors';
 
+
 export default makeStyles((theme) => ({
   appBar: {
     width: '100%',
@@ -32,11 +33,12 @@ export default makeStyles((theme) => ({
   },
   logo: {
     borderRadius: '40%',
+    
   },
   Mlogo: {
     marginLeft: '20px',
     borderRadius: '40%',
-    height:'3rem'
+    height:'90px'
 
 
   },

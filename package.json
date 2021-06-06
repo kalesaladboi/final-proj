@@ -4,9 +4,9 @@
   "description": "",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "cd client && npm start && cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\" \"cd client && npm start\"",
-    "install": "concurrently \"cd server && npm i\" \"cd client && npm i\""
+    "start:prod": "cd client && npm start && cd server && npm start && cd media-server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\" \"cd media-server && npm start\"",
+    "install": "concurrently \"cd server && npm i\" \"cd client && npm i\" \"cd media-server && npm i\""
   },
   "keywords": [],
   "author": "",
