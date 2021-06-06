@@ -23,6 +23,7 @@ This application was designed to be a basic social media application that allows
 
   ## Usage 
 https://morning-dawn-77427.herokuapp.com/
+![social](https://user-images.githubusercontent.com/75324665/120940826-2548aa00-c6ed-11eb-95b2-e8de42853541.gif)
 
   ## Credits
 
