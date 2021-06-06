@@ -33,11 +33,12 @@ export default makeStyles((theme) => ({
   },
   logo: {
     borderRadius: '40%',
+    
   },
   Mlogo: {
     marginLeft: '20px',
     borderRadius: '40%',
-    height:'3rem'
+    height:'90px'
 
 
   },

@@ -43,7 +43,7 @@ const Navbar = () => {
         <img className={classes.logo} src={sociallogo} alt="icon" height="90px" />
       </Link>
       <Link to="Movie/Movie" className={classes.brandContainer}>
-        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="100px" />
+        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="45px" />
       </Link>
       </div>
       <Typography color="textPrimary" variant="h2">SOCIAL</Typography>
