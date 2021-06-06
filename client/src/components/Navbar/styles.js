@@ -27,12 +27,13 @@ export default makeStyles((theme) => ({
     marginLeft: '-20px',
     display: 'flex',
     flexDirection: 'row',
-    width: '40%'
-
+    width: '40%',
+    padding: '10px',
     
   },
   logo: {
     borderRadius: '40%',
+    padding: '10px',
   },
   Mlogo: {
     marginLeft: '20px',

@@ -40,10 +40,10 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="default">
       <div className = "logos">
       <Link to="/" className={classes.brandContainer}>
-        <img className={classes.logo} src={sociallogo} alt="icon" height="90px" />
+        <img className={classes.logo} src={sociallogo} alt="icon" height="100px" />
       </Link>
-      <Link to="Movie/Movie" className={classes.brandContainer}>
-        <img className={classes.Mlogo} src={MNLogo} alt="icon" height="100px" />
+      <Link to="Movie/movie" className={classes.brandContainer}>
+        <img className={classes.logo} src={MNLogo} alt="icon" height="100px" />
       </Link>
       </div>
       <Typography color="textPrimary" variant="h2">SOCIAL</Typography>
