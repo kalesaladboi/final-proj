@@ -48,11 +48,11 @@ const Post = ({ post, setCurrentId }) => {
       >
         <CardMedia className={classes.media} image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
         
-        <CardContent>
-        <Typography gutterBottom variant="h10" color="textSecondary">{moment(post.createdAt).fromNow()}</Typography>
-        </CardContent>
+        <Card>
+        <Typography alignCenter variant="h10" color="textSecondary">{moment(post.createdAt).fromNow()}</Typography>
+        </Card>
 
-        <Typography variant="h8">{post.name}</Typography>
+        <Typography alignCenter variant="h8" align="center">{post.name}</Typography>
         {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
         <div className={classes.overlay2} name="edit">
           <Button
