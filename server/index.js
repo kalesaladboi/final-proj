@@ -3,12 +3,15 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-
 import postRoutes from './routes/posts.js';
 import userRouter from "./routes/user.js";
+const path = require('path')
 
 const app = express();
 
+const publicPath = path.join(__dirname, '..', 'public')
+
+app.use(express.static(publicPath))
 app.use(express.json({ limit: '30mb', extended: true }))
 app.use(express.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
