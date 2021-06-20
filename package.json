@@ -5,7 +5,7 @@
   "scripts": {
     "heroku-postbuild": "concurrently \"cd client && npm install && npm run build\" \"cd server && npm install && npm run index.js\" \"cd media-server && npm install && npm run media-server.js\" " ,
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "cd client && npm start && cd media-server && npm start",
+    "start:prod": "node index.js",
     "start:dev": "concurrently  \"cd client && npm start\" \"cd media-server && npm start\"",
     "install": "concurrently  \"cd client && npm i\" \"cd media-server && npm i\""
   },
